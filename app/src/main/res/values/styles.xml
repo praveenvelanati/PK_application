@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/Black</item>
+
+
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="Login">LOG IN</string>
+    <string name="search_friends">Search Friends</string>
+    <string name="send_message">Send message..</string>
+    <string name="Logout">Logout</string>
+    <string name="Name">Name</string>
+    <string name="or">OR</string>
+    <string name="Register">SIGN UP</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="welcome">Welcome</string>
+
+
+
+
+
+</resources>

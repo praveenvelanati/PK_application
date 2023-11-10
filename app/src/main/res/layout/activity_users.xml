@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context=".Activities.UsersActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/main">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gs_medium"
+                android:text="@string/welcome"
+                android:textColor="@color/White"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/gs_bold"
+                android:maxLines="1"
+                android:textColor="@color/White"
+                android:textSize="25sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Logout"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/gs_medium"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/main_light">
+
+        </TextView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_image"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeColor="@color/main_light"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            app:strokeWidth="1dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/left_corner_radius">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/search_friends"
+            android:fontFamily="@font/gs_medium"
+            android:textColor="@color/White"
+            android:maxLines="1"
+            android:textColorHint="@color/CadetBlue"
+            android:paddingStart="15dp"
+            android:background="@drawable/edittext_custom"
+            android:backgroundTint="@color/main_light">
+
+        </EditText>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_repeat_mode="restart"
+            app:shimmer_shape="radial">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_users"></include>
+
+                <include layout="@layout/shimmer_users"></include>
+
+                <include layout="@layout/shimmer_users"></include>
+
+                <include layout="@layout/shimmer_users"></include>
+
+                <include layout="@layout/shimmer_users"></include>
+
+                <include layout="@layout/shimmer_users"></include>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/usersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

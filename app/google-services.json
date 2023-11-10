@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393757629899",
+    "project_id": "chat-b651a",
+    "storage_bucket": "chat-b651a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393757629899:android:b28d82755f518a772f6a4e",
+        "android_client_info": {
+          "package_name": "com.sravan.covidapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393757629899-ib7p7prlu3gl0fe8514brr5m8u4j7dje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvDdWobC9Hhp_V_QA3awbp2LteDZM7HUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393757629899-ib7p7prlu3gl0fe8514brr5m8u4j7dje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

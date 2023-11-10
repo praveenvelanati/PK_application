@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Babble</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_first_fragment">Hello First fragment</string>
+    <string name="hello_second_fragment">Hello Second fragment</string>
+    <string name="hello_third_fragment">Hello Third fragment</string>
+
+    <string name="title_activity_test">TestActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_scaling_actvity">ScalingActvity</string>
+
+    <string name="title_hint">Enter Note Title</string>
+    <string name="title_error">Notes title missing..!</string>
+
+</resources>

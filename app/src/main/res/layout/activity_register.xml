@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".Activities.RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/icon_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/login">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_custom"
+                android:fontFamily="@font/gs_medium"
+                android:hint="@string/Name"
+                android:maxLines="1"
+                android:textColor="@color/White"
+                android:paddingStart="18dp"
+                android:textColorHint="@color/main_light"
+                android:textSize="16sp">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_custom"
+                android:fontFamily="@font/gs_medium"
+                android:hint="@string/Email"
+                android:maxLines="1"
+                android:textColor="@color/White"
+                android:paddingStart="18dp"
+                android:textColorHint="@color/main_light"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_custom"
+                android:fontFamily="@font/gs_medium"
+                android:hint="@string/Password"
+                android:maxLines="1"
+                android:textColor="@color/White"
+                android:inputType="textPassword"
+                android:paddingStart="18dp"
+                android:textColorHint="@color/main_light"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_custom"
+                android:fontFamily="@font/gs_medium"
+                android:hint="@string/Confirm_Password"
+                android:textColor="@color/White"
+                android:inputType="textPassword"
+                android:paddingStart="18dp"
+                android:maxLines="1"
+                android:textColorHint="@color/main_light"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/White"
+                    android:visibility="gone">
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/tv_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gs_medium"
+                    android:text="@string/Register"
+                    android:textColor="@color/main_light"
+                    android:textSize="32sp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
