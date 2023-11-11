@@ -14,3 +14,8 @@ fun showSnackBar(view: View, message: String) {
 
     Snackbar.make(view, message, Snackbar.LENGTH_SHORT).show()
 }
+
+fun showSnackLongBar(view: View, message: String) {
+
+    Snackbar.make(view, message, Snackbar.LENGTH_LONG).show()
+}
