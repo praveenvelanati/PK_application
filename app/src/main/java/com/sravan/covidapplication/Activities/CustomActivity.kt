@@ -32,6 +32,7 @@ class CustomActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         println("This is my First Commit")
+        println("This is my Second Commit")
 
 //        if (savedInstanceState == null) {
 
