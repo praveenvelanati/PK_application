@@ -13,6 +13,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".room.AddTodosActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".room.TodoActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activities.CustomActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Activities.GitTestActivity"
             android:exported="false" />
@@ -22,11 +42,8 @@
         <activity
             android:name=".room.NotesActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".Activities.NavigationActivity"
@@ -64,7 +81,7 @@
             android:exported="true" />
         <activity
             android:name=".Activities.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activities.DetailsActivity"
             android:exported="false" />
