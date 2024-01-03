@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         println("first commit")
+        println("T101")
 
         caseViewModels.getAllCases()
         binding.casesRecyclerView.layoutManager =
