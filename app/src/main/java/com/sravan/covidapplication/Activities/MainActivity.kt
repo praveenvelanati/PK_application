@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         casesAdapter = CasesAdapter(::onItemClicked)
         setContentView(binding.root)
 
+        println("first commit")
+
         caseViewModels.getAllCases()
         binding.casesRecyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
