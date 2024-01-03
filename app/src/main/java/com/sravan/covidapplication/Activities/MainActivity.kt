@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         println("first commit")
         println("T101")
+        println("T102")
 
         caseViewModels.getAllCases()
         binding.casesRecyclerView.layoutManager =
