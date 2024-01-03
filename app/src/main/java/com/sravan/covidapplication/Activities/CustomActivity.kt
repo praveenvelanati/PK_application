@@ -34,6 +34,8 @@ class CustomActivity : AppCompatActivity() {
         println("This is my First Commit")
         println("This is my Second Commit")
 
+        guhkhihijoijo
+
 //        if (savedInstanceState == null) {
 
         binding.recyclerView.apply {
