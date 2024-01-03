@@ -20,4 +20,5 @@ fun showSnackLongBar(view: View, message: String) {
     Snackbar.make(view, message, Snackbar.LENGTH_LONG).show()
     println("This is first commit")
     println()
+    println("fourth")
 }
