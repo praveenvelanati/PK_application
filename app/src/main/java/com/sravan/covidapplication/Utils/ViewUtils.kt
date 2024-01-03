@@ -13,6 +13,8 @@ fun Context.toast(message: String) {
 fun showSnackBar(view: View, message: String) {
 
     Snackbar.make(view, message, Snackbar.LENGTH_SHORT).show()
+    println("This is first commit")
+
 }
 
 fun showSnackLongBar(view: View, message: String) {
