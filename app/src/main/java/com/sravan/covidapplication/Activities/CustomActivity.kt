@@ -33,8 +33,7 @@ class CustomActivity : AppCompatActivity() {
 
         println("This is my First Commit")
         println("This is my Second Commit")
-
-        guhkhihijoijo
+        gcjvkbklnl
 
 //        if (savedInstanceState == null) {
 
