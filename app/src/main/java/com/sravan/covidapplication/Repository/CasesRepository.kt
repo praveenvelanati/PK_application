@@ -14,17 +14,17 @@ class CasesRepository @Inject constructor(private val casesApi: CasesApi) {
     fun getLiveCasesData() {
 
         _casesLiveData.postValue(NetworkResult.Loading())
-//        val response = casesApi.getCases("United States")
-//        if (response.isSuccessful && response.body() != null){
-//
-//            _casesLiveData.postValue(NetworkResult.Success(response.body()!!))
-//        } else if (response.errorBody() != null){
-//
-////            val errorObj = JSONObject(response.errorBody()!!.charStream().readText())
-//            _casesLiveData.postValue(NetworkResult.Error("Something went wrong"))        }
-//        else{
-//
-//            _casesLiveData.postValue(NetworkResult.Error("Something went wrong"))
-//        }
+        val response = casesApi.getCases("United States")
+        if (response.isSuccessful && response.body() != null){
+
+            _casesLiveData.postValue(NetworkResult.Success(response.body()!!))
+        } else if (response.errorBody() != null){
+
+//            val errorObj = JSONObject(response.errorBody()!!.charStream().readText())
+            _casesLiveData.postValue(NetworkResult.Error("Something went wrong"))        }
+        else{
+
+            _casesLiveData.postValue(NetworkResult.Error("Something went wrong"))
+        }
     }
 }

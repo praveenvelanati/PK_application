@@ -52,8 +52,6 @@ class NotesDaoTest {
         val result = notesDaoMock.getAllNotes().getOrAwaitValue()
         Assert.assertEquals(noteList.value, result)
 
-
     }
-
 
 }

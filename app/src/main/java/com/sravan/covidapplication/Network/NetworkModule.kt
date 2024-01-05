@@ -4,6 +4,7 @@ import com.sravan.covidapplication.Api.AuthInterceptor
 import com.sravan.covidapplication.Api.CasesApi
 import com.sravan.covidapplication.Api.SearchApi
 import com.sravan.covidapplication.Api.TestApi
+import com.sravan.covidapplication.Api.TownsApi
 import com.sravan.covidapplication.Utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -11,6 +12,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.Retrofit.Builder
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
@@ -22,7 +24,7 @@ class NetworkModule {
     @Provides
     fun providesRetrofit(): Retrofit.Builder {
         return Retrofit.Builder().baseUrl(Constants.BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create()) 
+            .addConverterFactory(GsonConverterFactory.create())
     }
 
     @Singleton
@@ -47,5 +49,11 @@ class NetworkModule {
     @Provides
     fun providesTestApi(retrofitBuilder: Retrofit.Builder, okHttpClient: OkHttpClient): TestApi {
         return retrofitBuilder.client(okHttpClient).build().create(TestApi::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun providesTownsApi(retrofitBuilder: Builder, okHttpClient: OkHttpClient): TownsApi{
+        return retrofitBuilder.client(okHttpClient).build().create(TownsApi::class.java)
     }
 }

@@ -12,7 +12,10 @@ import java.util.regex.Pattern
 object Constants {
 
 //    const val BASE_URL = "https://api.publicapis.org/"
-   const val BASE_URL= "https://api.foursquare.com/v3/"
+//   const val BASE_URL= "https://api.foursquare.com/v3/"
+    const val BASE_URL= "http://13.233.162.243:3000/api/survey-user/"
+
+
 
     const val USER_TOKEN = "user_token"
     const val PREFS_TOKEN_FILE = "prefs_token_file"

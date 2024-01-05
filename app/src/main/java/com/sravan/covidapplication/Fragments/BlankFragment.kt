@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.sravan.covidapplication.R
+import com.sravan.covidapplication.UIModel.TownViewModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -22,6 +24,8 @@ class BlankFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private val viewModel by activityViewModels<TownViewModel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -35,7 +39,48 @@ class BlankFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank2, container, false)
+        val view = inflater.inflate(R.layout.fragment_blank2, container, false)
+
+//        val textView = view.findViewById<TextView>(R.id.tv_text)
+//
+//        viewModel.getTownsList(InputModel(1))
+//
+//        viewModel.townsList.observe(viewLifecycleOwner) { event ->
+//
+//            when (event) {
+//                is NetworkResult.Error -> Toast.makeText(
+//                    requireContext(),
+//                    "Error",
+//                    Toast.LENGTH_SHORT
+//                )
+//                    .show()
+//
+//                is NetworkResult.Loading -> Toast.makeText(
+//                    requireContext(),
+//                    "Loading",
+//                    Toast.LENGTH_SHORT
+//                )
+//                    .show()
+//
+//                is NetworkResult.Success -> {
+//
+//                    Toast.makeText(requireContext(), "Success", Toast.LENGTH_SHORT).show()
+//
+//                }
+//            }
+//
+//        }
+//
+//        textView.setOnClickListener {
+//
+//            val fragment = TestFragment()
+//            val transaction = parentFragmentManager.beginTransaction()
+//            transaction.replace(R.id.parent,fragment)
+//            transaction.addToBackStack(null)
+//            transaction.commit()
+//        }
+
+        return view
     }
 
     companion object {
