@@ -31,9 +31,6 @@ class CustomActivity : AppCompatActivity() {
         townsAdapter = TownsAdapter(::OnItemClicked)
         setContentView(binding.root)
 
-        println("This is my First Commit")
-        println("This is my Second Commit")
-
 //        if (savedInstanceState == null) {
 
         binding.recyclerView.apply {
