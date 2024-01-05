@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:id="@+id/linearlayout">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/Black"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
 
-    <TextView
-        android:id="@+id/tvTown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="title"
-        android:textSize="20sp"
-        android:textColor="@color/colorPrimary">
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
-    </TextView>
+        <TextView
+            android:id="@+id/tvTown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="@color/White"
+            android:textSize="20sp">
 
-    <TextView
-        android:id="@+id/tvStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Status"
-        android:textSize="20sp"
-        android:textColor="@color/Black">
+        </TextView>
 
-    </TextView>
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/White"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
