@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke"
+    tools:context=".room.AddTodosActivity">
+
+    <!--edit text for note title-->
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Note Title"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/grey" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_error"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        android:layout_below="@id/title"
+        android:textColor="@color/Red">
+
+    </TextView>
+
+    <!--edit text for note description-->
+    <EditText
+        android:id="@+id/timeStamp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submitButton"
+        android:layout_below="@id/hint"
+        android:layout_margin="10dp"
+        android:background="@color/WhiteSmoke"
+        android:gravity="start|top"
+        android:hint="Enter your Note Details"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/grey" />
+
+    <!--button for saving and updating a note-->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/border_background"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/White" />
+
+</RelativeLayout>
