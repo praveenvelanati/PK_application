@@ -1,10 +1,12 @@
 package com.sravan.covidapplication.Repository
 
 import androidx.lifecycle.MutableLiveData
+import com.sravan.covidapplication.Api.CasesApi
 import com.sravan.covidapplication.models.Design
 import com.sravan.covidapplication.models.Features
+import javax.inject.Inject
 
-class CustomRepository {
+class CustomRepository @Inject constructor(private val casesApi: CasesApi){
 
 
     fun fakeCarDesignData(): MutableLiveData<List<Design>> {
