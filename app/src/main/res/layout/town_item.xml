@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="title"
         android:textSize="20sp"
-        android:textColor="@color/White">
+        android:textColor="@color/colorPrimary">
 
     </TextView>
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Status"
         android:textSize="20sp"
-        android:textColor="@color/White">
+        android:textColor="@color/Black">
 
     </TextView>
 </LinearLayout>
