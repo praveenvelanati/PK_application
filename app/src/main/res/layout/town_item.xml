@@ -28,7 +28,8 @@
             android:id="@+id/tvStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Status"
+            android:text="age"
+            android:textStyle="bold"
             android:textColor="@color/Green"
             android:textSize="14sp">
 
