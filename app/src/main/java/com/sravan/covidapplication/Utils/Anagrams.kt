@@ -4,6 +4,7 @@ fun main() {
 
     val result = checkAnagram("paris", "pairs")
     println("String are anagrams? : $result")
+    println("String are anagrams? : $result")
 }
 
 fun checkAnagram(subjectOne: String, subjectTwo: String): Boolean {
