@@ -22,6 +22,8 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 import com.sravan.covidapplication.Adapters.UsersAdapter
+import com.sravan.covidapplication.Api.CasesApi
+import com.sravan.covidapplication.Fragments.ChatFragment
 import com.sravan.covidapplication.R
 import com.sravan.covidapplication.UIModel.UserViewModel
 import com.sravan.covidapplication.Utils.Constants

@@ -30,17 +30,30 @@ class TownViewModel @Inject constructor(private val townRepository: TownReposito
 
         }
 
+//        if (!isDataLoaded){
 
             _townsList.postValue(NetworkResult.Success(dataList))
+//            isDataLoaded = true
+//        }
 
+
+        // API call code
+//        _townsList.postValue(Event(NetworkResult.Loading()))
+//        val response = townRepository.getTowns(inputModel)
+//        if (response.isSuccessful && response.body() != null){
+//
+//            _townsList.postValue(Event(NetworkResult.Success(response.body()!!)))
+//
+//        }
+//        else if (response.errorBody() != null){
+//            _townsList.postValue(Event(NetworkResult.Error(response.message())))
+//        }
 
     }
 
-
-
-    override fun onCleared() {
-        super.onCleared()
-        _townsList.value = null!!
-    }
+//    override fun onCleared() {
+//        super.onCleared()
+//        _townsList.value = null!!
+//    }
 
 }
